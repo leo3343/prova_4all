@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]" parallel="tests">
+  <parameter name="url" value="https://shopcart-challenge.4all.com/"/>
+  <test thread-count="2" name="DesafioChrome(failed)" parallel="tests">
+    <parameter name="path" value="C:\Users\Leonardo\Drivers\chromedriver.exe"/>
+    <parameter name="driver" value="webdriver.chrome.driver"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Desafios.Desafio_1">
+        <methods>
+          <include name="testNavegarPlataformaD1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Desafios.Desafio_1 -->
+    </classes>
+  </test> <!-- DesafioChrome(failed) -->
+  <test thread-count="2" name="DesafioFirefox(failed)" parallel="tests">
+    <parameter name="path" value="C:\Users\Leonardo\Drivers\geckodriver.exe"/>
+    <parameter name="driver" value="webdriver.gecko.driver"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Desafios.Desafio_1">
+        <methods>
+          <include name="testNavegarPlataformaD1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Desafios.Desafio_1 -->
+    </classes>
+  </test> <!-- DesafioFirefox(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+
+    <parameter name="url" value="https://shopcart-challenge.4all.com/"/>
+
+    <test name="DesafioChrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="driver" value="webdriver.chrome.driver"/>
+        <parameter name="path" value="C:\Users\Leonardo\Drivers\chromedriver.exe"/>
+        <classes>
+            <class name="Desafios.Desafio_1"/>
+            <class name="Desafios.Desafio_2"/>
+        </classes>
+    </test>
+
+    <test name="DesafioFirefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="driver" value="webdriver.gecko.driver"/>
+        <parameter name="path" value="C:\Users\Leonardo\Drivers\geckodriver.exe"/>
+        <classes>
+            <class name="Desafios.Desafio_1"/>
+            <class name="Desafios.Desafio_2"/>
+        </classes>
+    </test>
+
+</suite>
